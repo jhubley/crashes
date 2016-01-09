@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+body{
+  font-family: Arial;
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration: none;
+  color: #0071e5;
+}
+h1{
+  padding-top:30px;
+}
+h1, h3{
+  font-weight: normal;
+  margin:0;
+  padding-left:30px;
+}
+h2{
+  font-weight: normal;
+  margin:5px 0;
+  padding-left:20px;
+  color: #444444;
+}
+#lightbox, #weatherbox, #roadbox, #daybox, #roadtypebox, #crashbox{
+  border-top:1px solid #ccc;
+  margin-top:30px;
+  padding:15px;
+  clear:both;
+}
+#lightmap, #weathermap, #roadmap, #daymap, #roadtypemap, #crashmap{
+  float:left;
+  margin-right: -150px;
+  padding-bottom: 30px;
+}
+#light{
+  stroke:#fff;
+	stroke-width: .3px;
+	opacity:1;
+  fill: #fff;
+}
+#weather,
+#road,
+#day{
+  stroke:#eee;
+	stroke-width: .4px;
+	opacity:.7;
+  fill: #fff;
+}
+#legend{
+  margin-top: 120px;
+}
+.legw{
+  margin-right:8px;
+}
+svg.leg{
+  width:15px;
+  height:15px;
+  margin-right:3px;
+  margin-top:5px;
+  margin-bottom:-3px;
+}
+.take{
+  padding-top:400px;
+}
+#summary{
+  border-top:1px solid #999;
+  padding-top:15px;
+  margin-top:20px;
+  padding-left:30px;
+}
+#summary div{
+  float:left;
+}
+</style>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+
+<body>
+  <h1>Most Frequent Traits of Motor Vehicle Collisions in New York State Municipalities</h1>
+  <h3>2013 Data, <a href="https://data.ny.gov/Transportation/Motor-Vehicle-Crashes-Case-Information-Three-Year-/e8ky-4vqe">NY Department of Motor Vehicles</a></h3>
+<div id="summary">
+  <div><a href="#light">light conditions<br/><img src="ny1.png"></a></div>
+  <div><a href="#weather">weather conditions<br/><img src="ny2.png"></a></div>
+  <div><a href="#road">road conditions<br/><img src="ny3.png"></a></div>
+  <div><a href="#day">day of week<br/><img src="ny4.png"></a></div>
+  <div><a href="#roadtype">road type<br/><img src="ny5.png"></a></div>
+  <div><a href="#crash">crash type<br/><img src="ny6.png"></a></div>
+</div>
+<div id="lightbox">
+  <a name="light"></a>
+  <div id="lightmap">
+    <h2>light conditions</h2>
+  </div>
+  <div id="legend">
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#999"></svg>Unknown<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#a4c8df"></svg>Dawn<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#fff44d"></svg>Daylight<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#306986"></svg>Dusk<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#6f701c"></svg>Dark Road - Lighted<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#000"></svg>Dark Road - Unlighted<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#ddd"></svg>No Data</span>
+  </div>
+</div>
+<div id="weatherbox">
+  <a name="weather"></a>
+  <div id="weathermap">
+    <h2>weather conditions</h2>
+  </div>
+  <div id="legend">
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#999"></svg>Unknown<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#4dc6ff"></svg>Clear<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#b2bcd7"></svg>Cloudy<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#0a3fd5"></svg>Rain<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#2f3bd4"></svg>Snow<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#3b4e4e"></svg>Fog/Smog/Smoke<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#75760a"></svg>Sleet/Hail/Freezing Rain<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#5d5d5d"></svg>Other<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#ddd"></svg>No Data</span>
+  </div>
+</div>
+<div id="roadbox">
+  <a name="road"></a>
+  <div id="roadmap">
+    <h2>road conditions</h2>
+  </div>
+  <div id="legend">
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#999"></svg>Unknown<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#c8e37f"></svg>Dry<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#42b5e5"></svg>Wet<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#9dbcd7"></svg>Snow and Ice<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#718cff"></svg>Slush<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#0c2b9f"></svg>Flooded Water<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#756d36"></svg>Muddy<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#222"></svg>Other<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#ddd"></svg>No Data</span>
+  </div>
+</div>
+<div id="daybox">
+  <a name="day"></a>
+  <div id="daymap">
+    <h2>day of week</h2>
+  </div>
+  <div id="legend">
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#005ede"></svg>Sunday<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#00437b"></svg>Monday<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#009dde"></svg>Tuesday<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#00deb7"></svg>Wednesday<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#00a066"></svg>Thursday<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#73de00"></svg>Friday<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#bcde00"></svg>Saturday<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#ddd"></svg>No Data</span>
+    <p class="take">(Don't drive on Long Island on Friday.)</p>
+  </div>
+</div>
+<div id="roadtypebox">
+  <a name="roadtype"></a>
+  <div id="roadtypemap">
+    <h2>road descriptor</h2>
+  </div>
+  <div id="legend">
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#005ede"></svg>Unknown<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#00437b"></svg>Straight and Level<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#009dde"></svg>Straight and Grade<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#00deb7"></svg>Straight at Hill Crest<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#00a066"></svg>Curve and Level<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#73de00"></svg>Curve and Grade<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#bcde00"></svg>Curve at Hill Crest<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#ddd"></svg>No Data</span>
+  </div>
+</div>
+<div id="crashbox">
+  <a name="crash"></a>
+  <div id="crashmap">
+    <h2>crash type</h2>
+  </div>
+  <div id="legend">
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#005ede"></svg>Injury<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#00437b"></svg>Property Damage<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#009dde"></svg>Injury and Property Damage<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#00deb7"></svg>Fatal Accident<br/></span>
+    <span class="legw"><svg class="leg"><rect width="15" height="15" fill="#ddd"></svg>No Data</span>
+  </div>
+</div>
+<script>
+
+var width = 1100,
+    height = 860;
+
+var projection = d3.geo.mercator()
+		.center([-75.371915, 43.142887])
+		.scale(6500)
+		.translate([(width) / 2, (height)/2]);
+
+var path = d3.geo.path()
+		.projection(projection);
+
+var lightMap = d3.select("#lightmap")
+    .append("svg")
+    .style("width", width + "px")
+    .style("height", height + "px");
+
+var weatherMap = d3.select("#weathermap")
+    .append("svg")
+    .style("width", width + "px")
+    .style("height", height + "px");
+
+var roadMap = d3.select("#roadmap")
+    .append("svg")
+    .style("width", width + "px")
+    .style("height", height + "px");
+
+var dayMap = d3.select("#daymap")
+    .append("svg")
+    .style("width", width + "px")
+    .style("height", height + "px");
+
+var roadTypeMap = d3.select("#roadtypemap")
+    .append("svg")
+    .style("width", width + "px")
+    .style("height", height + "px");
+
+var crashMap = d3.select("#crashmap")
+    .append("svg")
+    .style("width", width + "px")
+    .style("height", height + "px");
+
+// Light Conditions Map
+d3.json("munis.json", function(error, munis) {
+
+var newDict = {};
+
+var lightMapMunicipalities = lightMap.append("svg:g")
+    .attr("id", "light");
+
+var lightMapLegend = lightMap.append("svg")
+    .attr("id", "lightlegend");
+
+lightMapMunicipalities
+  .selectAll("path")
+  .data(munis.features)
+  .enter().append("path")
+  .attr("d", path);
+
+  d3.csv("lightConditions.csv", function(error, data){
+
+      var maxValue;
+
+      data.forEach(function(d){
+        Unknown = +d.Unknown;
+        Dawn = +d.Dawn;
+        Daylight = +d.Daylight;
+        Dark_Road_Lighted = +d.Dark_Road_Lighted;
+        Dusk = +d.Dusk;
+        Dark_Road_Unlighted = +d.Dark_Road_Unlighted;
+
+        all = [Unknown, Dawn, Daylight, Dark_Road_Lighted, Dusk, Dark_Road_Unlighted]
+
+        maxValue = d3.max(all);
+        index = all.indexOf(maxValue);
+
+        newDict[d.id] = index;
+      });
+
+      lightMapMunicipalities
+        .selectAll("path")
+			  .attr("d", path)
+        .attr("class", function(d){
+          if (newDict[d.id] == 0) { return d.id + " unknown";}
+          else if (newDict[d.id] == 1) { return d.id + " dawn";}
+          else if (newDict[d.id] == 2) { return d.id + " daylight";}
+          else if (newDict[d.id] == 3) { return d.id + " dark_road_lighted";}
+          else if (newDict[d.id] == 4) { return d.id + " dusk";}
+          else if (newDict[d.id] == 5) { return d.id + " dark_road_unlighted";}
+          else {return d.id;} // no data present
+        })
+        .attr("fill", function(d) {
+            if (newDict[d.id] == 0) { return "#999";} // indexOf Unknown
+            else if (newDict[d.id] == 1) { return "#a4c8df";} // indexOf Dawn
+            else if (newDict[d.id] == 2) { return "#fff44d";} // indexOf Daylight
+            else if (newDict[d.id] == 3) { return "#6f701c";} // indexOf Dark_Road_Lighted
+            else if (newDict[d.id] == 4) { return "#306986";} // indexOf Dusk
+            else if (newDict[d.id] == 5) { return "#000";} // indexOf Dark_Road_Unlighted
+            else {return "#ddd";} // no data present
+        });
+
+  }); // close csv
+}); // close json
+
+
+// Weather Conditions Map
+d3.json("munis.json", function(error, munis) {
+
+var newDictw = {};
+
+var weatherMapMunicipalities = weatherMap.append("svg:g")
+    .attr("id", "weather");
+
+weatherMapMunicipalities
+  .selectAll("path")
+  .data(munis.features)
+  .enter().append("path")
+  .attr("d", path);
+
+  d3.csv("weather.csv", function(error, data){
+
+      var maxValue;
+
+      data.forEach(function(d){
+        Unknown = +d.Unknown;
+        Clear = +d.Clear;
+        Cloudy = +d.Cloudy;
+        Rain = +d.Rain;
+        Snow = +d.Snow;
+        Fog_Smog_Smoke = +d.Fog_Smog_Smoke;
+        Sleet_Hail_FreezingRain = +d.Sleet_Hail_FreezingRain;
+        Other = +d.Other;
+
+        allw = [Unknown, Clear, Cloudy, Rain, Snow, Fog_Smog_Smoke, Sleet_Hail_FreezingRain, Other]
+
+        maxValue = d3.max(allw);
+        index = allw.indexOf(maxValue);
+
+        newDictw[d.id] = index;
+      });
+
+      weatherMapMunicipalities
+        .selectAll("path")
+			  .attr("d", path)
+        .attr("class", function(d){
+          if (newDictw[d.id] == 0) { return d.id + " unknown";}
+          else if (newDictw[d.id] == 1) { return d.id + " clear";}
+          else if (newDictw[d.id] == 2) { return d.id + " cloudy";}
+          else if (newDictw[d.id] == 3) { return d.id + " rain";}
+          else if (newDictw[d.id] == 4) { return d.id + " snow";}
+          else if (newDictw[d.id] == 5) { return d.id + " fog_smog_smoke";}
+          else if (newDictw[d.id] == 6) { return d.id + " sleet_hail_freezingrain";}
+          else if (newDictw[d.id] == 7) { return d.id + " other";}
+          else {return d.id;} // no data present
+        })
+        .attr("fill", function(d) {
+            if (newDictw[d.id] == 0) { return "#999";} // indexOf Unknown
+            else if (newDictw[d.id] == 1) { return "#4dc6ff";} // indexOf Clear
+            else if (newDictw[d.id] == 2) { return "#b2bcd7";} // indexOf Cloudy
+            else if (newDictw[d.id] == 3) { return "#0a3fd5";} // indexOf Rain
+            else if (newDictw[d.id] == 4) { return "#2f3bd4";} // indexOf Snow
+            else if (newDictw[d.id] == 5) { return "#3b4e4e";} // indexOf Fog and Smog and Smoke
+            else if (newDictw[d.id] == 6) { return "#75760a";} // indexOf Sleet and Hail and Freezing Rain
+            else if (newDictw[d.id] == 7) { return "#5d5d5d";} // indexOf Other
+            else {return "#fff";} // no data present
+        });
+
+  }); // close csv
+}); // close json
+
+
+// Road Conditions Map
+d3.json("munis.json", function(error, munis) {
+
+var newDict = {};
+
+var roadMapMunicipalities = roadMap.append("svg:g")
+    .attr("id", "road");
+
+roadMapMunicipalities
+  .selectAll("path")
+  .data(munis.features)
+  .enter().append("path")
+  .attr("d", path);
+
+  d3.csv("roadConditions.csv", function(error, data){
+
+      var maxValue;
+
+      data.forEach(function(d){
+
+        Unknown = +d.Unknown;
+        Dry = +d.Dry;
+        Wet = +d.Wet;
+        Snow_Ice = +d.Snow_Ice;
+        Slush = +d.Slush;
+        Other = +d.Other;
+        Flooded_Water = +d.Flooded_Water;
+        Muddy = +d.Muddy;
+
+        all = [Unknown, Dry, Wet, Snow_Ice, Slush, Other, Flooded_Water, Muddy]
+
+        maxValue = d3.max(all);
+        index = all.indexOf(maxValue);
+
+        newDict[d.id] = index;
+      });
+
+      roadMapMunicipalities
+        .selectAll("path")
+			  .attr("d", path)
+        .attr("class", function(d){
+          if (newDict[d.id] == 0) { return d.id + " unknown";}
+          else if (newDict[d.id] == 1) { return d.id + " dry";}
+          else if (newDict[d.id] == 2) { return d.id + " wet";}
+          else if (newDict[d.id] == 3) { return d.id + " snow_ice";}
+          else if (newDict[d.id] == 4) { return d.id + " slush";}
+          else if (newDict[d.id] == 5) { return d.id + " other";}
+          else if (newDict[d.id] == 6) { return d.id + " flooded_water";}
+          else if (newDict[d.id] == 7) { return d.id + " muddy";}
+          else {return d.id;} // no data present
+        })
+        .attr("fill", function(d) {
+            if (newDict[d.id] == 0) { return "#999";} // indexOf Unknown
+            else if (newDict[d.id] == 1) { return "#c8e37f";} // indexOf Dry
+            else if (newDict[d.id] == 2) { return "#42b5e5";} // indexOf Wet
+            else if (newDict[d.id] == 3) { return "#9dbcd7";} // indexOf Snow and Ice
+            else if (newDict[d.id] == 4) { return "#718cff";} // indexOf Slush
+            else if (newDict[d.id] == 5) { return "#222";} // indexOf Other
+            else if (newDict[d.id] == 6) { return "#0c2b9f";} // indexOf Flooded Water
+            else if (newDict[d.id] == 7) { return "#756d36";} // indexOf Muddy
+            else {return "#ddd";} // no data present
+        });
+
+  }); // close csv
+}); // close json
+
+// Day of Week Map
+d3.json("munis.json", function(error, munis) {
+
+var newDict = {};
+
+var dayMapMunicipalities = dayMap.append("svg:g")
+    .attr("id", "day");
+
+dayMapMunicipalities
+  .selectAll("path")
+  .data(munis.features)
+  .enter().append("path")
+  .attr("d", path);
+
+  d3.csv("dayOfWeek.csv", function(error, data){
+
+      var maxValue;
+
+      data.forEach(function(d){
+
+        Sunday = +d.Sunday;
+        Monday = +d.Monday;
+        Tuesday = +d.Tuesday;
+        Wednesday = +d.Wednesday;
+        Thursday = +d.Thursday;
+        Friday = +d.Friday;
+        Saturday = +d.Saturday;
+
+        all = [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+
+        maxValue = d3.max(all);
+        index = all.indexOf(maxValue);
+
+        newDict[d.id] = index;
+      });
+
+      dayMapMunicipalities
+        .selectAll("path")
+			  .attr("d", path)
+        .attr("class", function(d){
+          if (newDict[d.id] == 0) { return d.id + " sunday";}
+          else if (newDict[d.id] == 1) { return d.id + " monday";}
+          else if (newDict[d.id] == 2) { return d.id + " tuesday";}
+          else if (newDict[d.id] == 3) { return d.id + " wednesday";}
+          else if (newDict[d.id] == 4) { return d.id + " thursday";}
+          else if (newDict[d.id] == 5) { return d.id + " friday";}
+          else if (newDict[d.id] == 6) { return d.id + " saturday";}
+          else {return d.id;} // no data present
+        })
+        .attr("fill", function(d) {
+            if (newDict[d.id] == 0) { return "#005ede";} // indexOf Sun
+            else if (newDict[d.id] == 1) { return "#00437b";} // indexOf Mon
+            else if (newDict[d.id] == 2) { return "#009dde";} // indexOf Tues
+            else if (newDict[d.id] == 3) { return "#00deb7";} // indexOf Wed
+            else if (newDict[d.id] == 4) { return "#00a066";} // indexOf Thurs
+            else if (newDict[d.id] == 5) { return "#73de00";} // indexOf Fri
+            else if (newDict[d.id] == 6) { return "#bcde00";} // indexOf Sat
+            else {return "#ddd";} // no data present
+        });
+
+  }); // close csv
+}); // close json
+
+// Road Descriptor Map
+d3.json("munis.json", function(error, munis) {
+
+var newDict = {};
+
+var roadTypeMapMunicipalities = roadTypeMap.append("svg:g")
+    .attr("id", "day");
+
+roadTypeMapMunicipalities
+  .selectAll("path")
+  .data(munis.features)
+  .enter().append("path")
+  .attr("d", path);
+
+  d3.csv("roadType.csv", function(error, data){
+
+      var maxValue;
+
+      data.forEach(function(d){
+
+        Unknown = +d.Unknown;
+        Straight_and_Level = +d.Straight_and_Level;
+        Straight_and_Grade = +d.Straight_and_Grade;
+        Straight_at_Hill_Crest = +d.Straight_at_Hill_Crest;
+        Curve_and_Level = +d.Curve_and_Level;
+        Curve_and_Grade = +d.Curve_and_Grade;
+        Curve_at_Hill_Crest = +d.Curve_at_Hill_Crest;
+
+        all = [Unknown, Straight_and_Level, Straight_and_Grade, Straight_at_Hill_Crest, Curve_and_Level, Curve_and_Grade, Curve_at_Hill_Crest]
+
+        maxValue = d3.max(all);
+        index = all.indexOf(maxValue);
+
+        newDict[d.id] = index;
+      });
+
+      roadTypeMapMunicipalities
+        .selectAll("path")
+			  .attr("d", path)
+        .attr("class", function(d){
+          if (newDict[d.id] == 0) { return d.id + " unknown";}
+          else if (newDict[d.id] == 1) { return d.id + " straight_level";}
+          else if (newDict[d.id] == 2) { return d.id + " straight_grade";}
+          else if (newDict[d.id] == 3) { return d.id + " straight_hill_crest";}
+          else if (newDict[d.id] == 4) { return d.id + " curve_level";}
+          else if (newDict[d.id] == 5) { return d.id + " curve_grade";}
+          else if (newDict[d.id] == 6) { return d.id + " curve_hill_crest";}
+          else {return d.id;} // no data present
+        })
+        .attr("fill", function(d) {
+            if (newDict[d.id] == 0) { return "#005ede";} // indexOf Unknown
+            else if (newDict[d.id] == 1) { return "#00437b";} // indexOf Straight and Level
+            else if (newDict[d.id] == 2) { return "#009dde";} // indexOf Straight and Grade
+            else if (newDict[d.id] == 3) { return "#00deb7";} // indexOf Straight at Hill Crest
+            else if (newDict[d.id] == 4) { return "#00a066";} // indexOf Curve and Level
+            else if (newDict[d.id] == 5) { return "#73de00";} // indexOf Curve and Grade
+            else if (newDict[d.id] == 6) { return "#bcde00";} // indexOf Curve at Hill Crest
+            else {return "#ddd";} // no data present
+        });
+
+  }); // close csv
+}); // close json
+
+// Crash Map
+d3.json("munis.json", function(error, munis) {
+
+var newDict = {};
+
+var crashMapMunicipalities = crashMap.append("svg:g")
+    .attr("id", "day");
+
+crashMapMunicipalities
+  .selectAll("path")
+  .data(munis.features)
+  .enter().append("path")
+  .attr("d", path);
+
+  d3.csv("crashData.csv", function(error, data){
+
+      var maxValue;
+
+      data.forEach(function(d){
+
+        Injury_Accident = +d.Injury_Accident;
+        Property_Damage_Accident = +d.Property_Damage_Accident;
+        Property_Damage_And_Injury_Accident = +d.Property_Damage_And_Injury_Accident;
+        Fatal_Accident = +d.Fatal_Accident;
+
+        all = [Injury_Accident, Property_Damage_Accident, Property_Damage_And_Injury_Accident, Fatal_Accident]
+
+        maxValue = d3.max(all);
+        index = all.indexOf(maxValue);
+
+        newDict[d.id] = index;
+      });
+
+      crashMapMunicipalities
+        .selectAll("path")
+			  .attr("d", path)
+        .attr("class", function(d){
+          if (newDict[d.id] == 0) { return d.id + " injury";}
+          else if (newDict[d.id] == 1) { return d.id + " propdamage";}
+          else if (newDict[d.id] == 2) { return d.id + " injury_propdamage";}
+          else if (newDict[d.id] == 3) { return d.id + " fatal";}
+          else {return d.id;} // no data present
+        })
+        .attr("fill", function(d) {
+            if (newDict[d.id] == 0) { return "#005ede";} // indexOf Injury
+            else if (newDict[d.id] == 1) { return "#00437b";} // indexOf Property Damage
+            else if (newDict[d.id] == 2) { return "#009dde";} // indexOf Injury and Property Damage
+            else if (newDict[d.id] == 3) { return "#00deb7";} // indexOf Fatal Accident
+            else {return "#ddd";} // no data present
+        });
+
+  }); // close csv
+}); // close json
+
+</script>
+</body>
+</html>

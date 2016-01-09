@@ -1,0 +1,1287 @@
+id,Injury_Accident,Property_Damage_Accident,Property_Damage_And_Injury_Accident,Fatal_Accident
+Queens,10678,6800,3204,92
+Bronx,6599,3002,1459,49
+Kings,12764,5243,2642,83
+Wheatland,4,98,31,2
+Scott,1,16,5,
+Herkimer,18,106,37,
+Stafford,2,120,21,
+Bethany,3,56,12,
+La Grange,29,311,123,3
+Tuxedo,18,181,57,4
+De Ruyter,,21,6,
+New York,7554,4348,1212,46
+Wales,2,59,15,1
+Warwick,12,393,115,2
+Westport,,38,5,
+Seneca,6,46,22,1
+Moravia,3,42,11,1
+--Select Value--,383,2739,433,
+Malta,16,276,73,
+Rosendale,5,119,29,
+Buffalo,1380,2425,1048,9
+Carrollton,,31,4,
+Onondaga,44,293,96,
+Mamakating,18,164,62,1
+Lysander,14,183,49,
+Southampton,140,938,340,2
+Chazy,2,52,15,
+Upper Brookville,3,26,15,
+Babylon,602,2154,1075,18
+Poughkeepsie,227,754,365,6
+West Seneca,80,569,202,2
+Rochester,773,3243,941,9
+Springville,3,41,11,
+Massapequa Park,27,155,49,
+Hempstead,1648,8742,3553,37
+Oyster Bay,488,3974,1601,18
+Riverside,3,23,7,
+Taghkanic,2,55,3,1
+Syracuse,667,1901,572,7
+North Hempstead,354,2112,739,5
+Huntington,466,2657,1249,18
+Esopus,7,163,40,1
+Russell,2,26,6,1
+Kirkland,7,123,32,2
+German,,4,1,
+Sand Lake,5,89,33,
+Wayland,2,75,30,
+Endicott,46,145,41,
+Gorham,2,62,25,1
+Brookhaven,1055,4731,2341,50
+Malone,23,208,48,
+Old Brookville,16,35,32,
+Oswego,37,371,82,1
+Farmingdale,25,169,62,
+Lake Grove,45,117,57,
+Colonie,212,1243,525,1
+New Bremen,6,33,4,
+Amherst,238,1453,758,4
+Victor,20,392,84,
+Lloyd,31,216,65,3
+Orangetown,73,462,159,2
+Utica,211,658,190,
+Garden City,92,509,239,2
+Alexander,,73,14,
+Mayfield,8,79,30,2
+Pamelia,8,92,26,1
+Richmond,1951,1896,859,11
+Wawarsing,12,168,62,1
+Putnam Valley,7,257,76,
+Lynbrook,105,294,130,
+Clarence,42,318,128,2
+Carmel,33,401,153,1
+Sleepy Hollow,13,68,22,2
+Napoli,,16,5,
+Schenectady,193,893,250,
+Watertown,77,563,121,2
+Stockholm,,92,18,
+Greenville,13,204,51,1
+Hastings,13,83,18,4
+Kingsbury,12,68,34,1
+Ossining,12,116,24,1
+Upper Nyack,4,15,9,
+Valley Stream,128,441,176,2
+Haverstraw,66,213,88,3
+Amsterdam,36,387,84,3
+Chenango,13,211,54,2
+Irondequoit,79,467,108,1
+Guilderland,62,429,158,1
+Albany,345,2220,546,5
+West Haverstraw,17,72,19,1
+Ithaca,79,791,142,
+Warsaw,5,150,34,
+Camden,8,100,13,1
+Manchester,14,142,35,1
+Southeast,20,430,166,1
+Coxsackie,4,118,15,
+Milton,8,152,51,2
+Enfield,4,52,15,
+Frankfort,8,87,22,1
+Binghamton,167,528,142,2
+Austerlitz,,35,6,1
+Cedarhurst,40,173,51,1
+Gardiner,3,134,23,1
+Bolton,2,52,8,
+Union,18,295,56,1
+Newark,4,164,22,
+Claverack,10,108,34,
+Chatham,10,133,19,1
+Clifton Park,44,550,157,4
+Mount Pleasant,53,309,144,2
+Queensbury,70,481,133,3
+Horseheads,37,262,76,3
+Bedford,31,329,124,5
+Ira,3,26,6,1
+Friendship,1,23,7,
+Verona,13,191,42,2
+Kinderhook,8,98,22,
+Pembroke,3,155,44,1
+Colton,1,54,14,
+New Windsor,41,574,155,3
+Chester,13,333,92,
+Stanford,3,78,16,
+Williamsville,14,124,38,
+Depew,17,231,68,2
+Kingston,92,360,112,2
+Lancaster,35,371,107,1
+Liverpool,6,66,17,
+Vestal,27,411,101,
+Clarkstown,205,1320,425,4
+Clayton,4,73,8,1
+White Plains,196,809,217,
+Pleasantville,14,87,28,
+Paris,1,58,21,
+Ilion,11,78,22,
+Palatine,2,30,11,
+Wilson,1,41,14,1
+Lawrence,24,99,29,
+New Rochelle,178,405,145,3
+Jamestown,47,392,113,2
+Pittstown,5,71,30,
+Moreau,9,152,39,
+Hamburg,79,777,252,7
+Cortlandville,18,244,68,
+East Aurora,4,81,21,
+Potter,,33,8,1
+Sidney,8,91,18,1
+Wilton,21,257,88,
+Sodus,9,96,28,2
+Plattekill,9,152,57,1
+Cortlandt,67,423,130,1
+Geddes,21,250,59,
+Highland Falls,5,28,10,
+Rotterdam,42,395,89,
+New Hartford,37,333,98,
+Mohawk,8,72,26,1
+Newburgh,214,1095,431,5
+Hector,2,108,24,
+Red Hook,8,164,48,1
+Cornwall On Hudson,1,22,11,
+Delaware,2,36,11,1
+Schaghticoke,2,87,45,
+Irvington,12,44,15,
+Elmira,64,288,86,
+Dewitt,67,590,195,3
+Fishkill,74,341,141,3
+Hanover,6,99,29,
+Tonawanda,129,620,253,4
+Greece,148,913,287,2
+Kirkwood,4,205,51,1
+Middleburg,4,36,12,
+Salina,48,457,148,1
+New Baltimore,3,102,15,3
+Pittsford,39,355,116,3
+East Fishkill,39,456,130,
+Troy,182,407,107,1
+Brighton,107,901,303,1
+Tuxedo Park,,3,,
+Smithtown,214,1211,539,7
+Henrietta,95,592,214,2
+Geneseo,14,223,41,
+Long Beach,68,341,114,1
+Laurel Hollow,2,6,3,
+Wallkill,91,787,240,5
+Batavia,44,509,107,1
+Port Chester,87,371,99,
+Stockton,4,27,9,
+Litchfield,3,20,4,
+Riverhead,67,718,318,5
+Niagara Falls,124,702,233,2
+Java,1,56,9,
+Orchard Park,34,507,130,2
+Plattsburg,50,676,129,1
+Lackawanna,48,106,42,1
+Southold,11,402,102,3
+Monroe,24,336,77,1
+Mount Vernon,89,263,94,2
+Glenville,20,287,98,1
+Johnson City,27,200,62,
+Gates,68,612,186,2
+Rockville Centre,92,159,145,4
+West Sparta,2,37,15,
+Arcadia,14,87,34,
+Cuba,3,68,20,1
+Crawford,13,102,40,
+Pleasant Valley,11,205,48,1
+Rushford,,23,7,1
+Harrietstown,,76,7,
+Oneonta,28,256,40,1
+Liberty,21,193,62,1
+Oneida,17,177,39,1
+Corning,24,236,58,3
+Freeport,192,230,308,3
+Evans,6,217,62,2
+Cobleskill,7,150,26,2
+Maine,1,108,34,2
+Islip,900,3475,1770,28
+Saratoga Springs,43,811,157,4
+Whitestown,6,125,24,2
+Farmington,17,174,40,
+Potsdam,16,273,51,2
+Allegany,14,237,50,2
+Manlius,30,365,114,1
+Summerhill,3,18,5,1
+Geneva,13,126,46,2
+New Paltz,35,332,97,2
+North Hills,44,371,163,1
+Amityville,47,176,78,1
+Riga,8,89,20,
+North Salem,5,152,39,2
+Marshall,2,43,15,
+Brownville,5,48,14,
+Ephratah,2,23,9,
+Ischua,,22,3,
+Central Square,6,31,3,1
+Cicero,50,474,141,4
+Windsor,7,103,39,
+Keene,1,55,4,
+Pelham Manor,21,86,39,
+Southport,6,110,19,1
+Norwich,18,183,30,
+Chestnut Ridge,5,101,41,1
+Goshen,31,415,117,1
+Triangle,2,32,8,
+Lockport,61,521,158,2
+Yonkers,624,781,499,6
+Cold Spring,5,38,6,
+Elbridge,7,108,29,2
+Nyack,26,143,22,
+Wright,1,9,5,
+Schodack,8,209,53,
+Busti,8,82,22,
+East Hampton,45,383,93,4
+Ramapo,91,594,233,2
+Owasco,1,37,11,
+Old Westbury,36,420,220,
+Campbell,8,78,20,2
+Pomfret,6,107,31,3
+Vienna,6,80,15,1
+Auburn,70,253,110,1
+Brutus,2,89,10,1
+Highland,,25,10,1
+Hyde Park,28,308,104,2
+Throop,4,32,13,
+Chili,43,274,81,3
+New Berlin,,44,14,
+Erin,2,25,5,
+Kent,19,163,48,1
+Clarkson,8,63,16,1
+New Hempstead,11,62,27,
+Bethlehem,38,468,107,1
+Lindenhurst,43,221,103,2
+Richfield,1,28,7,
+Wappinger Falls,12,89,24,
+Candor,,55,19,
+Skaneateles,9,149,35,2
+Solvay,7,38,5,
+Oyster Bay Cove,4,27,13,
+Cornwall,24,212,83,
+Rush,6,72,25,1
+Pittsfield,6,27,11,
+Grand Island,18,130,49,
+Avon,2,159,29,
+Manheim,3,19,4,
+Middletown,69,388,97,
+Clinton,5,148,29,
+Lake George,9,126,39,1
+Trenton,5,80,11,2
+Wheatfield,12,204,88,1
+Plainfield,1,13,2,
+Deposit,1,44,7,2
+Collins,2,35,7,
+Clay,73,556,204,5
+Clermont,4,27,5,
+Olean,25,247,61,1
+Johnstown,27,226,92,
+Lewiston,17,136,60,7
+Newfield,2,99,17,3
+Williston Park,10,60,20,
+Flower Hill,15,114,45,
+Owego,22,249,57,
+Brunswick,13,226,52,1
+Ulster,47,461,151,2
+Italy,3,29,7,
+Schroeppel,25,75,29,1
+Greenburgh,167,676,280,5
+Cheektowaga,132,894,494,4
+Cazenovia,5,115,18,
+Fulton,20,242,56,
+Bath,15,175,43,
+Harrison,54,313,117,2
+Niskayuna,27,281,106,3
+Homer,16,113,30,
+Charleston,1,23,7,
+Eden,5,81,18,1
+Lansing,12,270,46,2
+Briarcliff Manor,20,102,34,1
+Halfmoon,27,309,110,2
+Glen Cove,47,172,83,
+Pavilion,3,73,21,
+Patchogue,38,112,34,
+Westbury,40,375,152,2
+Baxter Estates,,10,4,
+Spring Valley,115,210,67,
+Ulysses,5,108,22,1
+Ticonderoga,4,102,21,
+Farmersville,,28,7,2
+Massena,23,147,46,1
+Catskill,16,184,70,1
+Camillus,33,342,98,
+Big Flats,9,149,37,1
+Arcade,5,80,26,
+Chautauqua,9,60,13,1
+Newstead,4,96,26,1
+North Castle,24,208,70,
+Romulus,2,44,7,
+Perinton,37,349,127,
+Benton,3,44,11,
+Ogden,13,156,44,
+Dansville,8,83,23,
+Tuscarora,7,38,9,2
+Rhinebeck,12,271,66,2
+Ohio,2,17,1,
+Webster,36,411,121,
+Rose,1,17,4,
+Ledyard,,26,1,
+Le Roy,4,36,6,
+Yorkshire,3,38,17,1
+Mt. Morris,5,87,10,
+Hinsdale,5,62,14,
+Easton,1,65,13,
+Almond,1,37,7,
+Chemung,5,61,22,1
+Glens Falls,31,260,80,
+Veteran,4,47,15,1
+Tully,3,76,17,
+Canandaigua,28,367,77,2
+Niagara,28,170,57,1
+Leroy,4,141,24,2
+Alfred,,51,14,
+Phelps,9,167,51,1
+Hudson,17,75,22,
+Mina,1,30,7,
+Wayne,2,19,5,
+Thompson,20,215,103,3
+Waddington,1,43,12,
+Portville,,38,6,
+Richland,8,80,19,
+Floral Park,24,118,47,
+Red House,,12,4,
+Harriman,,44,12,1
+Augusta,1,23,3,
+Pendleton,6,91,36,1
+Prattsville,,12,5,
+Hopewell,6,91,27,3
+Lenox,8,96,21,
+Rockland,4,106,11,
+Sterling,,26,15,
+Albion,11,120,40,
+Stockbridge,4,37,5,
+Gainesville,1,58,8,
+Williamson,13,62,23,
+Gouverneur,4,91,17,1
+Bristol,3,61,12,
+Highlands,23,140,51,
+Aurelius,6,64,16,
+Shawangunk,5,131,42,1
+Yorktown,74,456,210,2
+Stony Creek,,5,2,
+Cortland,21,359,57,1
+Green Island,2,40,3,
+Plymouth,,27,6,
+Ballston Spa,6,76,19,
+Scotia,9,68,21,
+North Greenbush,11,250,64,2
+Nassau,2,53,20,1
+Hurley,7,77,28,2
+East Greenbush,22,237,68,
+Newfane,9,95,31,1
+Ontario,20,98,42,1
+Elma,8,175,74,1
+Ballston,8,129,32,
+Sheldon,2,71,21,
+Mount Kisco,14,50,29,
+Mechanicville,6,40,19,
+Oswegatchie,14,89,10,1
+Brasher,1,38,14,1
+East Syracuse,6,92,31,
+Marcellus,3,71,23,
+Eastchester,45,218,82,2
+Parma,21,118,41,2
+Ellenville,7,49,9,
+Peekskill,50,200,59,1
+Lloyd Harbor,1,24,9,1
+Hastings On Hudson,17,39,22,
+Wellsville,16,72,15,
+Baldwinsville,7,88,16,
+North Harmony,,55,19,1
+Falconer,3,37,4,1
+Rensselaer,13,87,26,1
+Brockport,8,99,9,
+Larchmont,12,107,23,
+Andes,1,19,6,1
+Spafford,2,22,11,
+Tyre,5,74,13,
+Richmondville,2,41,14,
+Penfield,47,382,142,3
+Dobbs Ferry,26,146,42,
+Dickinson,9,147,30,
+Montebello,5,67,22,
+Lowville,10,103,6,
+Port Henry,,7,2,
+Otisco,4,22,8,1
+Macedon,14,100,33,2
+Mineola,40,280,94,1
+Florida,11,127,18,1
+Wolcott,6,36,14,
+Coventry,1,27,4,
+Westhampton Beach,6,41,11,
+Covert,,33,11,
+Amenia,5,55,15,
+Mamaroneck,79,326,85,1
+Denmark,1,30,7,
+Fleming,4,46,14,
+Eaton,4,84,19,2
+New Castle,27,210,64,2
+Murray,2,55,15,1
+Sweden,16,109,47,
+Wilmington,1,26,9,
+Stony Point,34,174,74,2
+Byron,1,58,12,1
+Jasper,,28,6,
+Lumberland,2,22,14,1
+Woodstock,8,63,15,
+Saugerties,30,247,86,2
+Tarrytown,44,171,56,1
+Stephentown,,28,14,1
+Vernon,9,101,27,
+Esperance,2,27,10,
+Sullivan,15,145,46,1
+West Winfield,1,7,1,
+Northampton,2,28,9,
+Suffern,11,111,29,
+Lattingtown,3,23,19,
+Waverly,3,62,11,
+Alden,5,85,22,1
+North Tonawanda,39,162,78,
+Winfield,5,13,9,
+Washington,4,60,28,2
+Lake Success,45,269,119,
+Cambria,8,66,33,3
+Kenmore,27,109,39,
+Conesus,,62,10,
+Stamford,1,35,4,
+Fonda,1,18,2,
+Ellisburg,10,69,18,1
+Aurora,7,99,27,
+Mansfield,1,21,6,
+Elmsford,42,220,66,
+Somerset,4,19,6,
+Willsboro,2,36,4,
+Thomaston,3,25,5,
+Johnsburg,4,90,14,
+Patterson,5,155,56,2
+Elizabethtown,2,45,12,
+Marcy,7,158,29,
+Marlborough,6,111,52,1
+Oneida Castle,2,5,3,
+Watervliet,28,101,25,
+Pine Plains,4,48,12,1
+Niles,1,19,4,
+Rye,26,129,55,1
+Champion,8,34,13,2
+Fenton,5,89,19,1
+New Hyde Park,31,122,34,
+Masonville,3,26,5,
+Boonville,3,97,15,1
+Franklin,5,98,22,
+Leicester,5,63,20,
+Mendon,8,155,27,
+Wawayanda,17,222,71,
+Sandy Creek,6,58,13,
+East Otto,2,13,7,
+Corinth,3,56,31,
+East Rockaway,20,76,25,1
+Westford,,6,3,
+Hume,4,26,1,
+Pelham,18,108,49,
+Islandia,31,160,110,
+Cairo,11,121,36,2
+Waterloo,15,112,25,
+Seneca Falls,16,111,26,
+Savannah,5,29,2,
+Granby,17,48,18,4
+Ellicott,17,144,44,
+Van Buren,30,189,41,1
+Watson,3,23,9,1
+Schuyler Falls,1,66,18,
+Scarsdale,35,173,35,1
+Sherburne,5,70,12,1
+Northport,8,77,18,
+Genesee,1,18,6,1
+Floyd,3,66,17,1
+Minisink,,59,8,1
+Fenner,,37,16,
+Broadalbin,4,50,29,1
+South Nyack,7,83,29,
+Richford,2,25,8,
+Sparta,,51,15,
+Hornby,2,22,7,
+Wappinger,33,283,103,2
+Union Vale,5,44,26,1
+Lewisboro,12,138,39,1
+Le Ray,21,99,34,1
+East Hills,16,178,65,1
+Danby,5,66,21,
+Boston,5,85,30,1
+Northhaven,3,10,1,
+Conklin,5,69,12,
+Sag Harbor,9,58,10,
+Somers,35,232,92,2
+Lima,2,61,14,
+Walden,10,47,19,
+Hamlin,5,40,19,
+South Glens Falls,1,72,11,
+Fultonville,1,26,3,
+Waterford,10,70,25,
+Junius,1,49,12,
+Afton,3,44,10,2
+Brookville,15,47,37,
+Blooming Grove,7,205,56,
+West Monroe,7,38,12,
+North Norwich,2,45,12,
+Royalton,10,92,37,1
+Dryden,10,276,74,1
+Hancock,3,139,34,1
+Darien,3,122,21,2
+Westerlo,4,63,13,
+Norfolk,4,86,18,
+Hoosick,4,83,35,1
+Rodman,1,34,3,
+Ashland,1,28,9,
+Roslyn,7,99,34,
+Morris,1,38,5,
+Whitehall,4,53,13,
+Port Washington North,4,23,6,
+Leon,,7,3,
+Duanesburg,6,142,30,
+Livingston,5,51,14,3
+Western,1,57,5,1
+Dover,7,85,35,1
+Fort Ann,6,75,23,2
+Granville,15,64,22,
+Willing,2,17,2,
+Cuyler,1,14,2,
+Concord,3,85,21,
+Rome,65,385,113,
+Stuyvesant,4,23,7,
+Westmoreland,8,140,37,1
+Bangor,,35,10,
+Bennington,2,61,7,
+Port Jervis,21,137,40,
+Scottsville,,13,3,
+Canton,7,182,28,3
+Minoa,,9,4,
+Muttontown,2,33,20,
+Long Lake,1,42,7,1
+Wesley Hills,5,43,9,
+Van Etten,3,29,4,
+Gloversville,29,103,30,1
+Adams,14,86,18,
+Barton,3,48,12,1
+Lyons Falls,,7,1,
+St. Armand,,27,3,
+Hillburn,3,26,15,
+Virgil,2,81,10,
+Carthage,2,34,3,
+,10,70,30,
+Fallsburgh,11,130,60,1
+Hamilton,6,87,10,
+Bethel,8,57,22,2
+Sanford,1,71,11,
+Montgomery,13,281,89,5
+Saranac Lake,8,63,12,
+Watkins Glen,5,51,8,
+Springwater,2,43,8,
+Crown Point,1,43,16,
+Little Falls,12,78,22,2
+Guilford,3,42,13,1
+Scipio,4,39,13,
+Lindley,1,36,7,
+Rye Brooke,12,82,28,
+Jackson,2,34,7,1
+Angelica,3,30,4,
+Peru,3,88,18,
+Lincoln,3,34,10,
+Beacon,15,127,34,
+Great Neck Plaza,31,110,11,
+Poestenkill,3,54,17,
+Jerusalem,3,76,8,1
+Barker,4,75,19,1
+Fredonia,8,73,14,
+Black Brook,,30,13,
+Preble,2,41,7,
+Wethersfield,3,35,6,1
+Brant,4,39,12,1
+Pawling,6,94,39,
+Pierrepont,3,47,5,
+Fayette,3,50,19,2
+Hammond,4,20,4,
+Livonia,3,153,36,
+Meredith,2,42,7,1
+New Scotland,10,101,28,
+Caledonia,1,64,8,
+Minden,2,50,11,
+Ghent,7,74,18,
+Amboy,2,22,4,
+Greenwich,6,64,15,
+Turin,1,37,4,
+Cayuta,1,20,7,1
+Forestport,3,40,9,1
+Harmony,3,15,4,
+Hornell,6,72,18,
+Churchville,,10,5,
+Fairport,4,55,4,
+Poland,6,47,13,
+Beekmantown,7,72,22,2
+Scriba,14,53,14,
+Varick,,19,11,1
+Bergen,2,63,13,
+Exeter,1,38,6,
+Lyonsdale,3,7,5,
+Greenport,11,109,29,1
+Otego,1,61,9,
+Milford,2,70,29,1
+North Syracuse,22,113,39,
+Ogdensburg,13,109,33,
+Lee,3,70,16,2
+Carlisle,1,21,9,
+Burlington,1,28,5,
+Lisbon,7,103,23,
+Marbletown,5,130,30,1
+Hornellsville,3,112,24,
+Castile,,50,11,
+Erwin,8,102,25,
+Conewango,2,6,2,
+Athens,5,79,15,1
+Menands,10,130,22,
+Dix,1,30,9,1
+Dunkirk,16,162,57,
+Washingtonville,5,73,13,
+Shelby,8,60,9,1
+Worcester,,47,12,
+Edwards,3,10,2,
+Fremont,3,65,14,1
+Tioga,3,43,12,
+Oakfield,1,56,8,
+Catt.,2,36,17,2
+St. Regis,5,23,15,
+Clifton,2,13,1,
+Scio,2,29,9,
+Marion,4,41,10,
+Whitesboro,6,49,12,
+Springport,1,21,8,
+Cohocton,2,63,10,1
+Sherrill,,8,2,
+East Rochester,6,70,8,1
+Hoosick Falls,1,22,1,
+Elba,2,53,13,
+Chesterfield,,40,2,
+Willet,1,19,3,
+Phillipstown,3,148,42,
+Forestburgh,,28,6,
+Constantia,5,26,7,1
+Orangeville,,62,11,
+Medina,2,95,10,
+Caneadea,,10,7,
+Deerpark,10,114,41,1
+Ardsley,7,71,21,
+Grafton,2,16,8,1
+Middlesex,1,35,6,
+Truxton,1,25,4,1
+Windham,1,42,8,1
+Canaan,2,61,19,
+Parishville,2,48,7,
+Fayetteville,4,47,11,
+Dayton,2,23,8,
+Mount Hope,1,42,11,
+Groton,4,64,26,
+Greenwood,,22,5,
+Tannersville,2,5,3,1
+Nelson,2,40,4,1
+Monticello,5,123,36,
+German Flatts,6,30,10,
+Howard,2,39,6,
+Galway,2,49,12,1
+Mooers,1,47,8,1
+Hudson Falls,7,35,15,
+Croton On Hudson,6,29,15,
+Lodi,1,24,2,1
+Annsville,4,32,21,
+Croghan,4,35,2,1
+Ripley,,48,15,
+Cohoes,29,163,36,
+Ellenburg,1,47,10,1
+Victory,1,17,6,
+Conquest,2,25,3,
+Neversink,5,38,13,
+Volney,13,45,30,1
+Sennett,3,101,41,
+Sharon,4,23,8,
+Sheridan,4,80,20,
+Franklinville,1,28,10,
+Montour Falls,3,19,8,1
+Holland,4,34,8,1
+Hamden,,16,10,
+Lake Placid,4,63,7,
+Hartland,1,38,9,
+Olive,8,50,18,
+Bellport,5,10,4,
+Butler,2,27,4,
+Attica,2,62,13,
+Berne,,41,7,
+Malverne,10,34,13,
+Unadilla,6,31,13,1
+Edmeston,2,31,9,
+Gaines,2,61,14,1
+Bridgewater,,30,10,1
+Essex,,9,7,
+North Elba,3,95,17,
+Villenova,2,21,8,
+Tuckahoe,9,13,5,
+North Collins,3,32,12,
+Barrington,1,37,7,
+Montour,,22,6,
+Caroga,,19,7,1
+Hebron,3,20,10,1
+West Turin,1,23,4,
+Covington,,43,12,
+Otsego,4,66,21,1
+Hamptonburgh,1,98,30,2
+Warrensburg,6,81,20,
+Stillwater,6,71,19,
+Ellery,5,61,19,
+Edinburg,,19,6,1
+Dresden,,18,5,
+Greene,3,100,22,
+Deerfield,4,77,10,
+Russia,1,19,2,
+Palermo,11,25,9,1
+Davenport,1,55,19,
+Madison,5,67,14,1
+Spencerport,7,49,9,
+Barre,1,47,6,
+Avoca,4,60,19,
+Lapeer,1,12,4,1
+Westfield,4,75,13,1
+Cape Vincent,4,20,9,
+Pompey,3,94,23,2
+Evans Mills,,7,2,
+Humphrey,,8,5,
+Salamanca,2,31,5,
+Bainbridge,7,63,7,
+Glen,1,49,16,
+Yorkville,7,40,13,
+Urbana,4,23,7,
+Webb,2,40,11,
+Port Jefferson,12,91,30,
+Brocton,,5,4,
+Altona,3,69,10,1
+Pike,2,35,6,
+Lewis,2,58,13,
+Millbrook,3,24,5,
+Ossian,2,33,2,1
+Root,1,42,8,
+Champlain,1,68,15,2
+Beekman,7,112,36,1
+Lebanon,1,17,10,
+Altamont,,9,3,
+Lafayette,5,77,29,
+Mcgraw,1,5,2,
+Catlin,1,33,11,
+Hobart,,2,,
+Walton,6,75,23,
+Sloatsburg,4,77,22,1
+Hannibal,5,45,14,2
+Colesville,3,93,30,1
+East Bloomfield,7,75,20,
+Delhi,13,94,14,1
+French Creek,2,12,5,
+Lakewood,4,30,11,
+Starkey,1,60,8,
+Stewart Manor,1,21,6,
+Schuylerville,,23,4,
+Horicon,,18,4,
+Sloan,7,10,4,
+Stockport,4,27,14,
+Columbus,,42,5,
+Middlebury,2,51,14,
+Sangerfield,2,41,3,
+Rathbone,1,24,6,
+Groveland,1,81,22,
+Unionville,,5,1,
+Perry,4,91,18,1
+Columbia,,11,13,
+Lisle,1,53,16,
+Theresa,4,31,14,
+Chateaugay,5,36,8,
+Sardinia,1,46,16,
+Munsey Park,,6,1,
+Mentz,2,31,11,
+Port Dickinson,,24,9,
+Red Creek,,3,,
+Buchanan,2,10,3,
+Lyme,4,33,8,
+Marathon,2,54,11,
+Morrisville,2,21,3,
+Lacona,,,1,
+Mexico,10,52,18,
+Remsen,4,54,15,
+Cayuga Heights,1,24,1,
+Bayville,3,45,12,
+Lake Luzerne,2,46,17,1
+Clarendon,1,52,14,
+Cincinnatus,,29,6,
+Alabama,1,76,21,1
+Lake Pleasant,,17,2,
+Schoharie,5,56,14,
+Ausable,4,39,12,
+Minetto,3,17,1,
+Perth,5,47,19,
+Hilton,4,19,4,
+North Dansville,2,31,9,
+Tupper Lake,3,36,5,
+Shandaken,5,46,16,
+Porter,3,32,17,
+Freeville,,9,1,
+Caroline,3,50,8,
+Laurens,2,50,12,
+Ellington,2,18,4,
+Colchester,1,52,11,1
+Saranac,,78,19,
+Bolivar,2,19,2,1
+Genoa,,27,9,
+Palmyra,17,72,20,1
+Portland,3,54,15,
+Taylor,2,7,2,
+Macomb,,11,2,
+South Valley,,5,2,1
+Brightwaters,7,35,19,
+Indian Lake,1,62,12,1
+Grove,1,12,7,
+Rutland,5,42,6,1
+Louisville,1,67,2,
+Silver Creek,2,8,1,
+Brookfield,,57,7,1
+Alexandria,1,32,6,1
+Fowler,,31,6,
+Canastota,5,43,11,
+Galen,4,37,13,
+Gilboa,4,26,6,
+Colden,,31,8,1
+Freedom,,29,7,
+Cochecton,1,26,11,
+Elmira Heights,10,23,6,
+Pulaski,3,27,9,
+Benson,1,10,1,
+York,1,78,11,
+White Creek,4,35,7,1
+Roxbury,3,22,3,
+Brewster,4,29,5,
+Kortright,3,40,8,
+Amity,,28,8,
+Middlefield,3,46,14,
+Henderson,,40,1,
+Quogue,2,14,7,
+Montezuma,2,34,3,1
+Cato,3,40,10,
+Lyons,10,67,21,2
+Schuyler,8,49,17,
+Hartford,3,32,10,
+Steuben,,20,4,
+Callicoon,1,37,5,
+Asharoken,1,2,2,
+Rossie,1,11,4,
+Arkwright,2,25,4,
+Clyde,2,12,3,
+Princetown,2,58,11,
+Yates,,18,4,
+Schroon,3,44,10,
+Gerry,8,27,16,1
+Salem,8,27,6,
+Putnam,1,8,1,
+Whitney Point,2,30,3,
+Oxford,2,92,14,2
+Moriah,1,35,14,1
+Nunda,3,56,10,
+Knox,6,29,8,
+Otselic,2,26,5,
+Smithville,,26,1,1
+Charlton,2,36,19,2
+Pitcairn,,17,5,
+Great Neck,17,101,18,
+Boylston,,7,,
+Naples,3,47,6,
+Parish,5,41,6,
+Piercefield,,21,4,
+Dannemora,,36,10,
+Greenfield,7,109,27,
+Oriskany,2,12,2,
+Northeast,,24,13,
+Ridgeway,5,49,23,
+Carlton,3,41,10,2
+Santa Clara,2,12,3,
+Huron,4,32,12,
+Milo,2,57,12,
+South Bristol,1,31,2,
+Corfu,,11,3,
+Marilla,,44,11,
+Ava,3,16,5,
+Silver Springs,1,7,1,
+Little Valley,2,28,8,
+Morristown,2,29,10,1
+Northumberland,2,44,9,1
+Woodhull,2,17,9,
+Durham,2,72,19,
+Preston,1,19,4,
+Moira,1,42,5,
+Interlaken,,4,,
+De Peyster,1,5,1,
+Springfield,1,20,7,
+Westville,4,16,8,
+Newport,5,30,4,
+Lincklaen,,6,1,
+Stratford,2,5,1,
+Panama,,3,1,
+Great Valley,,33,15,
+Addison,3,30,6,
+Sherman,,23,6,
+Rensselaerville,,20,10,2
+Woodridge,1,8,1,
+Island Park,7,36,19,1
+Florence,1,18,4,1
+Penn Yan,8,23,8,
+Madrid,2,40,5,
+Ellicottville,2,42,9,
+Bellerose,4,10,2,
+Walworth,13,94,26,1
+Berlin,,15,7,1
+Kendall,1,24,9,2
+Lyndon,,5,4,
+Copake,2,34,6,1
+Atlantic Beach,5,15,8,
+Honeoye Falls,3,20,3,
+Philadelphia,4,25,10,
+Slyvan Beach,,14,3,1
+Fort Plain,1,21,1,
+Berkshire,,11,5,
+New Lebanon,2,33,9,
+Summit,,10,8,
+North Hudson,1,44,13,
+Richville,,4,1,
+Butternuts,,17,5,
+Castorland,,1,1,
+Head Of The Harbor,1,6,3,1
+West Carthage,2,24,,
+Hopkinton,1,24,4,
+Phoenix,3,19,2,
+Huntington Bay,,2,1,
+Canadice,2,22,6,
+Northville,,10,1,
+Baldwin,1,6,4,
+New Haven,4,30,8,
+Mill Neck,4,20,5,
+Coeymans,4,69,22,
+Orleans,4,35,7,
+Sea Cliff,4,30,10,
+Georgetown,2,16,8,
+Roslyn Harbor,2,16,8,
+Caton,1,22,3,
+Wells,,26,3,
+Valatie,3,20,4,
+Bronxville,6,26,4,1
+West Bloomfield,6,36,4,
+Hague,2,21,5,
+Andover,1,30,7,
+Danube,3,28,8,
+Jewett,,23,12,
+Cooperstown,,29,2,
+New Hudson,,11,3,
+Shoreham,,4,1,
+Alma,,10,4,
+New Lisbon,1,18,1,
+Canisteo,,65,14,1
+Prattsburg,3,32,4,1
+Ashford,3,27,9,1
+Jay,2,24,2,
+Seward,1,20,6,
+Constable,,21,5,
+Munnsville,1,7,3,
+Fort Edward,12,58,19,1
+Leyden,1,25,1,1
+Cambridge,7,45,6,
+Norway,1,9,2,
+Gowanda,5,23,6,
+Hillsdale,2,26,14,1
+Hounsfield,6,57,13,
+Sinclairville,1,8,2,
+Hampton,1,14,6,
+Jefferson,3,27,4,
+Warren,2,16,3,
+Eagle,1,36,2,
+Bloomingburg,1,4,1,
+Brushton,,4,1,
+Pound Ridge,3,25,9,
+Locke,3,40,5,
+Greig,3,22,,1
+Pharsalia,,14,4,
+Manorhaven,,27,5,
+Orange,2,21,8,
+Clymer,1,19,2,
+Greenwood Lake,4,18,8,
+Odessa,,11,2,
+Day,4,11,3,
+Randolph,3,38,8,
+Union Springs,,4,3,1
+Burns,,14,4,
+West Almond,,18,4,
+Venice,,20,7,
+Cherry Valley,2,25,3,
+Martinsburg,1,29,4,
+Nanticoke,1,19,7,
+Matinecock,1,10,8,
+Fine,5,23,3,
+Hadley,1,19,11,
+Woodbury,3,44,9,
+Wilna,6,12,3,
+Hunter,2,41,14,
+Ancram,2,24,8,
+Cameron,2,16,1,
+Angola,,11,1,
+New Square,3,9,,
+New York Mills,3,29,10,
+Fabius,2,33,8,
+Independence,3,8,4,
+Waterville,1,12,2,
+Nichols,7,55,16,
+Middleport,1,8,3,
+Kiryas Joel,19,32,6,
+Wheeler,2,21,9,
+Kiantone,2,24,9,
+Sodus Point,2,2,,
+Thurman,2,12,5,
+Argyle,6,41,10,1
+Solon,,10,11,
+Dolgeville,1,11,2,
+Providence,,12,4,
+Heuvelton,1,12,1,
+East Williston,5,20,12,
+Valley Falls,,3,,
+Carroll,,21,9,
+Pulteney,1,8,1,
+Hartwick,5,41,17,
+Palatine Bridge,1,13,1,
+Tusten,1,18,10,
+Clifton Springs,,14,3,
+Holland Patent,,4,2,
+Fair Haven,,6,,
+Newcomb,,10,2,
+Maryland,2,41,10,
+Saratoga,2,63,9,1
+Milan,2,65,17,
+Cherry Creek,,16,5,
+Canajoharie,6,55,15,1
+Dexter,,4,,
+Duane,,7,1,
+Wellsburg,1,8,5,
+Burke,2,13,9,1
+Machias,2,17,2,1
+Bovina,1,12,3,
+Grandview On Hudson,,15,1,
+Minerva,1,11,8,
+De Kalb,2,35,8,
+Inlet,2,8,1,
+Trumansburg,1,15,2,
+Mcdonough,1,13,1,
+Allen,,13,2,
+St. Johnsville,1,30,5,
+Germantown,3,22,5,
+Ward,,5,6,
+Charlotte,1,13,4,
+Ovid,4,28,8,
+Antwerp,,23,4,
+Spencer,3,35,10,
+Smithfield,1,21,7,1
+Millerton,1,19,3,
+Hardenburgh,,3,1,
+Chaumont,1,5,1,
+Harpersfield,1,30,4,
+Arkport,,7,1,
+Tyrone,,31,7,
+Hammondsport,,11,,
+Wurtsboro,1,15,3,
+Piermont,4,32,9,
+Wirt,,11,3,
+Orwell,2,9,,
+Fairfield,3,21,4,1
+Oppenheim,1,30,4,
+Voorheesville,2,13,,
+Shelter Island,,53,3,
+Catharine,,21,1,
+Torrey,1,29,14,
+Otisville,2,13,2,
+Pitcher,,14,4,
+Newark Valley,1,32,12,
+Birdsall,,6,2,
+Reading,,41,8,
+Bombay,1,35,11,
+Poospatuck,1,2,,
+Painted Post,2,24,5,1
+Thurston,,9,5,
+Maybrook,,6,1,
+Weedsport,,16,3,
+Holley,1,11,2,
+Speculator,,15,1,
+Lexington,1,15,2,
+Belfast,,24,6,1
+Fleischmanns,,6,,
+Sharon Springs,,7,2,
+Williamstown,2,17,4,
+Akron,1,18,5,
+Fort Covington,2,29,14,
+Mayville,2,8,4,
+Portage,3,19,4,
+South Dayton,1,5,,
+Perrysburg,1,19,7,1
+Roseboom,,7,1,
+Harrisburg,1,28,,1
+Bellmont,3,32,10,
+Salisbury,2,19,5,
+Victory Mills/Victory,,3,,
+Hartsville,,18,4,
+Dundee,,10,,
+Broome,1,9,3,
+Morehouse,,9,2,
+Bradford,1,8,3,1
+Alexandria Bay,2,11,,
+Fort Johnson,,12,1,
+Centerville,2,1,3,
+Smyrna,1,18,6,
+Harrisville,1,6,,
+Sackets Harbor,1,4,,
+Gallatin,1,39,9,
+Hewlett Bay Park,1,5,3,
+Lyndonville,1,3,,
+Norwood,,13,2,
+Denning,,5,1,
+Clayville,,8,1,
+Port Byron,1,5,3,
+Diana,5,10,3,
+West Union,1,6,1,
+Clarksville,2,17,1,
+Round Lake,2,20,6,
+New Albion,,13,7,1
+Ravena,2,30,3,
+Russell Gardens,1,13,5,
+Nissequoque,,11,4,
+East Nassau,,10,,
+Hewlett Harbor,,10,3,
+Lorraine,2,10,1,
+Chittenango,3,25,8,
+Barneveld,1,5,2,
+Blasdell,5,23,5,
+Oil Spring,,1,2,
+Freetown,1,7,2,
+South Corning,1,8,2,
+North Hornell,1,7,2,
+Shortsville,2,7,1,
+Arietta,,10,1,
+Persia,1,10,,
+Hope,,12,,
+Celoron,,5,1,
+Wampsville,3,11,4,
+Philmont,,5,1,
+Cassadaga,,8,1,
+Brandon,,2,1,
+Great Neck Estates,3,8,1,
+Petersburg,,25,7,
+Harford,1,12,4,
+Richfield Springs,,13,,
+Margaretville,,12,2,
+Tivoli,,7,2,1
+Black River,2,9,,
+Ames,,3,,
+Kensington,1,4,1,
+Tompkins,4,11,4,
+Pinckney,1,6,,
+Constableville,,3,1,
+Cattaraugus,,7,1,
+Rouses Point,,7,,
+Saddle Rock,,7,1,
+Woodsburgh,1,1,3,
+Savona,1,13,5,
+Port Leyden,1,7,,
+Blenheim,,10,1,
+Redfield,,19,1,1
+Plandome Manor,2,7,4,
+Hermon,2,14,2,
+Richburg,1,3,,
+Pomona,2,14,2,
+Conesville,1,3,5,
+Jordan,,3,4,
+Nelliston,,6,2,
+Bleecker,,5,1,
+Genesee Falls,2,18,6,
+Farnham,,6,2,1
+Limestone,,2,,
+Jeffersonville,1,5,4,
+Keeseville,,7,,
+Plandome Heights,1,2,2,
+Cold Brook,,2,,
+Troupsburg,1,8,1,
+Earlville,,5,1,
+Bemus Point,,6,,
+Belmont,,6,2,
+Sempronius,1,11,2,
+Deferiet,2,2,,
+Sands Point,2,4,6,
+South Floral Park,1,1,,
+Old Field,1,3,,
+Middleville,,7,,
+Otto,2,7,1,
+Clare,1,3,,
+Youngstown,,5,,1
+Cleveland,,3,,
+Nelsonville,,4,1,
+Oriskany Falls,,5,,
+Shinnecock,1,1,,
+Worth,,3,,
+Wyoming,,2,,
+Gilbertsville,,3,,
+Plandome,1,4,2,
+Meridian,,1,,
+Montague,1,,,1
+Granger,1,12,3,
+Prospect,,2,,
+Copenhagen,1,4,2,
+Osceola,,2,,
+Saltaire,1,1,,
+Burdett,,3,1,
+Roslyn Estates,,2,1,
+Cayuga,,4,,
+Hewlett Neck,,2,,
+Halcott,,3,,
+Stark,1,3,4,
+Canaseraga,,2,,
+Forestville,,4,,
+Belle Terre,,1,,
+Hagaman,,4,,
+Poquott,,,1,
+Rensselaer Falls,,2,,
+Kings Point,1,3,2,
+Delanson,,1,,
+Millport,,,1,
+Altmar,,1,,
+Delevan,,1,1,
+Rushville,,2,,
